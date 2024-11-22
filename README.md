@@ -10,6 +10,8 @@ This project provides a secure, user-friendly login and registration system buil
 
 **Database:** MySQL
 
+**Text Editor:** Visual Studio Code
+
 
 ## System Configuration
 
@@ -86,7 +88,7 @@ extension=pdo_sqlite
 
 Step by step Commands :
 
-Run these commands whether in terminal or [Git](https://git-scm.com/downloads)
+Run these commands whether in visual's terminal or [Git Bash](https://git-scm.com/downloads) ( Ctr+Shft+` )
 
 ```bash
 npm install
@@ -98,9 +100,11 @@ php artisan serve
 
 ## Deployment From Github
 
-Step by step Commands :
-
-Run these commands whether in terminal or [Git](https://git-scm.com/downloads)
+Git clone command -
+```bash
+git clone https://github.com/Tsukuna/web_authentication.git
+```
+When you have done, run these commands whether in visual's terminal or [Git Bash](https://git-scm.com/downloads) ( Ctr+Shft+` )
 
 ```bash
 cp .env.example .env
