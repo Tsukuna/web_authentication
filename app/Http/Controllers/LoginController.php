@@ -32,7 +32,7 @@ class LoginController extends Controller
         ]
         );
 
-        //Notification Alert Process
+          //Notification Alert Process
           $throttleKey = Str::lower($request->input('email')).'|'.$request->ip();
 
           if (RateLimiter::tooManyAttempts($throttleKey, 3)) {
@@ -124,7 +124,6 @@ class LoginController extends Controller
                 });
                 return redirect()->route('email.verify')->with('success','Registration completed! Please check your email to verify your account');
 
-                // return redirect()->route('account.login')->with('success','Register Successfully');
         } else{
                 return redirect()->route('account.register')
                              ->withInput()

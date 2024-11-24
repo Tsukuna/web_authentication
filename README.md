@@ -12,7 +12,6 @@ This project provides a secure, user-friendly login and registration system buil
 
 **Text Editor:** Visual Studio Code
 
-
 ## System Configuration
 
 Some system requirements are essential to configure -
@@ -106,11 +105,45 @@ git clone https://github.com/Tsukuna/web_authentication.git
 ```
 When you have done, run these commands whether in visual's terminal or [Git Bash](https://git-scm.com/downloads) ( Ctr+Shft+` )
 
+
 ```bash
 cp .env.example .env
 npm install
 composer install
 php artisan key:generate
+```
+
+# Laravel Mail Configuration with Gmail
+
+Create app passwords in your gmail account and copy code into MAIL_PASSWORD
+### Update `.env` File
+Edit your `.env` file with the following settings:
+```env
+```bash
+MAIL_MAILER=smtp
+MAIL_HOST=smtp.gmail.com
+MAIL_PORT=465
+MAIL_USERNAME=your-email@gmail.com
+MAIL_PASSWORD= generated code by app-passwords
+MAIL_ENCRYPTION=ssl
+MAIL_FROM_ADDRESS=your-email@gmail.com
+MAIL_FROM_NAME="${APP_NAME}"
+```
+# Database Configuration 
+### Update `.env` File
+Edit your `.env` file with the following settings:
+Before you migrate database, you need to modify dabatase connection in .env file
+
+```bash
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=authentication
+DB_USERNAME=htet
+DB_PASSWORD=htet123
+```
+After that, run these commands
+```bash
 php artisan migrate
 npm run dev
 php artisan serve

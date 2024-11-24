@@ -21,19 +21,15 @@ class OtpController extends Controller
             $message->subject("Your OTP Code");
         });
 
-
         return view('loginWithOtp');
     }
 
     public function loginWithOtpPost(Request $request){
 
-        // return $request;
-
         $request->validate([
             'otp' => 'required | integer '
         ]);
-
-
+        
         $user = Auth::user();
 
         if($request->otp == $user->otp){
