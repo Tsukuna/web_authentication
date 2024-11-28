@@ -118,7 +118,7 @@ php artisan key:generate
 Create app passwords in your gmail account and copy code into MAIL_PASSWORD
 ### Update `.env` File
 Edit your `.env` file with the following settings:
-```env
+
 ```bash
 MAIL_MAILER=smtp
 MAIL_HOST=smtp.gmail.com
