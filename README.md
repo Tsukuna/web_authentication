@@ -82,21 +82,6 @@ extension=pdo_pgsql
 extension=pdo_sqlite
 ```
 
-
-## Deployment From Zip File
-
-Step by step Commands :
-
-Run these commands whether in visual's terminal or [Git Bash](https://git-scm.com/downloads) ( Ctr+Shft+` )
-
-```bash
-npm install
-composer install
-php artisan migrate
-npm run dev
-php artisan serve
-```
-
 ## Deployment From Github
 
 Git clone command -
