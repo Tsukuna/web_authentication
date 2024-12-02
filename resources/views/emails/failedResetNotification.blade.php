@@ -37,7 +37,7 @@
                     <tr>
                         <td style="text-align: center; padding: 20px; color: #718096; font-size: 12px;">
                             <p style="margin: 0;">Best regards,</p>
-                            <p style="margin: 0;">Your Security Team</p>
+                            <p style="margin: 0;">Security Team</p>
                         </td>
                     </tr>
                 </table>
