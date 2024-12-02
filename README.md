@@ -40,8 +40,9 @@ choco install mysql
 After installing mysql package, close powershell and reopen it, then create as follow:
 
 ```bash
-CREATE USER 'htet' IDENTIFIED BY 'htet123';
-GRANT ALL PRIVILEGES ON *.* TO 'htet';
+mysql -u root
+CREATE USER 'username' IDENTIFIED BY 'password';
+GRANT ALL PRIVILEGES ON *.* TO 'username';
 ```
 After this, download  [phpMyAdmin](https://www.phpmyadmin.net/) zip file and unzip it
 
