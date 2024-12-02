@@ -65,7 +65,7 @@
             <p>If you didn’t request a password reset, you can safely ignore this email.</p>
         </div>
         <div class="email-footer">
-            <p>Thank you,<br>Your Company Name</p>
+            <p>Thank you</p>
         </div>
     </div>
 </body>
